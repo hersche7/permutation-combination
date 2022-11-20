@@ -1,0 +1,15 @@
+def comb(N,R):
+    def fact(NUMBER):
+        F=1
+        while NUMBER>=1:
+            F*=NUMBER
+            NUMBER-=1
+        return F
+    return fact(N)/(fact(N-R)*fact(R))
+
+#Combination Program
+
+N=int(input('enter number'))
+R=int(input('enter number'))
+nCr=comb(N,R)
+print(nCr)  
