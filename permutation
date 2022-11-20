@@ -1,0 +1,13 @@
+def perm(N,R):
+    def fact(NUMBER):
+        F=1
+        while NUMBER>=1:
+            F*=NUMBER
+            NUMBER-=1
+        return F
+    return fact(N)/fact(N-R)
+
+n=int(input('Enter index: '))
+r=int(input('Enter vacants: '))
+nPr=perm(n,r)
+print(nPr)
